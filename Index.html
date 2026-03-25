@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalyan Landing</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Card */
+.container {
+    width: 90%;
+    max-width: 400px;
+    border: 2px solid gold;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255,215,0,0.5);
+}
+
+/* Heading */
+.badge {
+    background: gold;
+    color: black;
+    padding: 8px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.title {
+    color: gold;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Box */
+.text-box {
+    background: rgba(255,215,0,0.1);
+    padding: 15px;
+    border-radius: 15px;
+    margin: 15px 0;
+}
+
+/* Countdown */
+.countdown {
+    color: #00e0ff;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Button */
+.btn {
+    background: linear-gradient(45deg,#00c6ff,#0072ff);
+    padding: 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 18px;
+    box-shadow: 0 0 15px #00c6ff;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.05);}
+    100% {transform: scale(1);}
+}
+
+/* List */
+.list {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.list p {
+    margin: 8px 0;
+}
+
+.note {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #ccc;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="badge">OFFICE SPECIAL CHART</div>
+
+<div class="title">101% कल्याण गेम फिक्स</div>
+
+<div class="text-box">
+मेरे भाई इस बार किस्मत पे नहीं, मास्टर भाई पे भरोसा करो आपकी किस्मत बदल जायेगी। कल्याण फिक्स वीआईपी ऑफिस वाला चार्ट मिलेगा।
+</div>
+
+<div class="countdown">
+ऑटोमेटिक जॉइनिंग <span id="time">5</span> सेकंड में...
+</div>
+
+<a href="https://telegram.me/+w7UYJa_iZfM0NzFl" class="btn" id="joinBtn">
+🚀 जॉइन टेलीग्राम फ्री
+</a>
+
+<div class="list">
+<p>✅ सिंगल ओपन</p>
+<p>✅ 3 जोड़ी और 3 चैनल</p>
+<p>✅ कल्याण ऑफिस VIP चार्ट</p>
+</div>
+
+<div class="note">
+नोट: टेलीग्राम जॉइन करें और अपना लॉस रिकवर करें।
+</div>
+
+</div>
+
+<script>
+// Countdown + Auto Redirect
+let time = 5;
+let timer = setInterval(() => {
+    time--;
+    document.getElementById("time").innerText = time;
+
+    if(time <= 0){
+        clearInterval(timer);
+        window.location.href = "https://telegram.me/+w7UYJa_iZfM0NzFl";
+    }
+}, 1000);
+</script>
+
+</body>
+</html>
