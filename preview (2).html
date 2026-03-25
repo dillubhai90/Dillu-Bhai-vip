@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalyan Fix</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    background: #111;
+    border: 2px solid #ffd700;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 20px #ffd700;
+}
+
+.badge {
+    background: #ffd700;
+    color: black;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 22px;
+    color: #ffd700;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.desc {
+    background: #222;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 15px 0;
+}
+
+.countdown {
+    color: #00d9ff;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.btn {
+    display: block;
+    background: #00aaff;
+    color: white;
+    padding: 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 0 15px #00aaff;
+    animation: zoom 1s infinite alternate;
+}
+
+@keyframes zoom {
+    from { transform: scale(1); }
+    to { transform: scale(1.08); }
+}
+
+.list {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.list p {
+    margin: 8px 0;
+}
+
+.note {
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 15px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="badge">OFFICE SPECIAL CHART</div>
+
+    <div class="title">101% कल्याण गेम फिक्स</div>
+
+    <div class="desc">
+        मेरे भाई इस बार किस्मत पे नहीं, मास्टर भाई पे भरोसा करो आपकी किस्मत बदल जायेगी। 
+        कल्याण फिक्स वीआईपी ऑफिस वाला चार्ट मिलेगा।
+    </div>
+
+    <div class="countdown" id="count">
+        ऑटोमैटिक जॉइनिंग 60 सेकंड में...
+    </div>
+
+    <a href="https://telegram.me/+w7UYJa_iZfM0NzFl" class="btn">
+        🚀 जॉइन टेलीग्राम फ्री
+    </a>
+
+    <div class="list">
+        <p>✔ सिंगल ओपन</p>
+        <p>✔ 3 जोड़ी और 3 चैनल</p>
+        <p>✔ कल्याण ऑफिस VIP चार्ट</p>
+    </div>
+
+    <div class="note">
+        नोट: टेलीग्राम जॉइन करें और अपना लॉस रिकवर करें।
+    </div>
+
+</div>
+
+<script>
+let time = 60;
+
+let count = document.getElementById("count");
+
+let timer = setInterval(() => {
+    time--;
+    count.innerText = "ऑटोमैटिक जॉइनिंग " + time + " सेकंड में...";
+    
+    if(time <= 0){
+        clearInterval(timer);
+        window.location.href = "https://telegram.me/+w7UYJa_iZfM0NzFl";
+    }
+}, 1000);
+</script>
+
+</body>
+</html>
